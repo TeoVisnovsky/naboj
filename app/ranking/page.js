@@ -8,10 +8,18 @@ export default function RankingPage() {
   useEffect(() => {
     const fetchTeams = async () => {
       const mockData = [
-        { name: 'Team Alpha', score: 98 },
-        { name: 'Team Beta', score: 92 },
-        { name: 'Team Gamma', score: 89 },
-        { name: 'Team Delta', score: 87 },
+        { name: 'Prasnice', score: 10 },
+        { name: 'Malasáč', score: 4 },
+        { name: 'JedenMudryDvajaBlbi', score: 8 },
+        { name: 'Dementi', score: 16 },
+        { name: 'Idioti', score: 8 },
+        { name: 'IganCigan', score: 5 },
+        { name: 'Ulitníky', score: 13.33 },
+        { name: 'Opičky', score: 5 },
+        { name: 'BermudskyTrojuholnik', score: 2.67 },
+        { name: 'BezMena', score: 13.6 },
+        { name: 'Zemiak', score: 20 },
+        { name: 'Včeličky', score: 9 }
       ];
       setTeams(mockData);
     };
