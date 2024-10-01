@@ -26,7 +26,7 @@ export default function Login() {
       // Store token or handle session, then redirect
       localStorage.setItem('token', data.token);
       
-      setTimeout(router.push('/tasks'), 500)
+      setTimeout(router.push('/math-tasks'), 500)
     } else {
       setError(data.message);
     }
@@ -56,10 +56,14 @@ export default function Login() {
             required
           />
         </div>
+    
+
         {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
         <button className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">
           Log in
         </button>
+       <p>Not registered yet? <a href="/register" className="text-blue-600">Register</a></p>
+
       </form>
     </div>
   );

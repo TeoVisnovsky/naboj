@@ -3,7 +3,7 @@ export default function Home() {
     <div>
       <h1 className="text-blue-700 text-3xl font-bold text-center my-4">Welcome to the Task Portal</h1>
       <p className="text-center text-lg text-gray-700">
-        Choose a category from the navigation below to get started!
+        Login or register an account to get started!
       </p>
     </div>
   );

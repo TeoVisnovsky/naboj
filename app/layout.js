@@ -23,10 +23,10 @@ export default function RootLayout({ children }) {
           <nav className="flex justify-between items-center max-w-7xl mx-auto">
             {/* Logo */}
             <div className="flex items-center">
-                <Image src={logo}
+                <a href="https://wwspmndag.sk"><Image src={logo}
                 alt = "schoollogo"
                 className="h-13 w-13 object-contain"
-                />
+                /></a>
           
             </div>
 
@@ -55,6 +55,12 @@ export default function RootLayout({ children }) {
             <span className="text-xl">🔍</span>
             <span>Logic Tasks</span>
           </a>
+          <a href="/ranking" className="hover:underline">
+          <div className="flex flex-col items-center">
+            <span className="text-lg">🏆</span>
+            <span>Ranking</span>
+          </div>
+        </a>
         </footer>
       </body>
     </html>

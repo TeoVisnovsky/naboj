@@ -44,11 +44,11 @@ export default function Tasks({params}) {
         <div className="space-y-4">
           <div className="bg-white p-4 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold">Úloha č. {problem1num}</h3>
-            <p>{problem1}</p>
+            <p className="text-black">{problem1}</p>
           </div>
           <div className="bg-white p-4 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold">Úloha č. {problem2num}</h3>
-            <p>{problem2}</p>
+            <p className="text-black">{problem2}</p>
           </div>
         </div>
       </div>
