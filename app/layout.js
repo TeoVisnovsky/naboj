@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
           <nav className="flex justify-between items-center max-w-7xl mx-auto">
             {/* Logo */}
             <div className="flex items-center">
-                <a href="https://wwspmndag.sk"><Image src={logo}
+                <a href="https://www.spmndag.sk"><Image src={logo}
                 alt = "schoollogo"
                 className="h-13 w-13 object-contain"
                 /></a>

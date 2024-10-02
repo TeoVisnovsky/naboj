@@ -19,12 +19,18 @@ export default function RankingPage() {
         { name: 'BermudskyTrojuholnik', score: 2.67 },
         { name: 'BezMena', score: 13.6 },
         { name: 'Zemiak', score: 20 },
-        { name: 'Včeličky', score: 9 }
+        { name: 'Včeličky', score: 9 },
+        { name: 'My', score: 16},
+        { name: 'N/A', score: 14.4}
       ];
-      setTeams(mockData);
+
+      const sortedTeams = mockData.sort((a, b) => b.scores - a.score);
+      setTeams(sortedTeams)
     };
     fetchTeams();
   }, []);
+
+
 
   const sortTeams = (order) => {
     const sortedTeams = [...teams].sort((a, b) =>
@@ -33,6 +39,9 @@ export default function RankingPage() {
     setTeams(sortedTeams);
     setIsSortedAsc(order === 'asc'); // Toggle sort order state
   };
+
+  
+
 
   return (
     <div className="min-h-screen bg-blue-50 flex flex-col items-center justify-start p-4 sm:p-8">
